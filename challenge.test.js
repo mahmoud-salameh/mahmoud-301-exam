@@ -12,6 +12,15 @@ Hint: You can use the array function reverse
 const reverseString = (str) => {
     // Solution code here...
 
+    let reversed = '';
+    reversed = str.split(" ").map(word => {
+        return word.split("").reverse().join("");
+    }).join(" ");
+   
+  
+    return reversed;
+
+
 };
 
 /* ------------------------------------------------------------------------------------------------
